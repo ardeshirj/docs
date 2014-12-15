@@ -1,0 +1,29 @@
+Budgie Dependencies Fedora-20
+-----------------------------
+
+# Install them through yum
+  gnome-common
+  glib0-devel
+  libwnck3-devel
+  gtk3-devel
+  gobject-introspection-devel
+  pulseaudio-libs-devel
+  mutter-devel
+  upower-devel
+  gnome-menus-devel
+  libpeas-devel
+  libgee-devel
+  vala-devel
+
+# Installation pahts
+  prefix:                 /usr
+  libdir:                 ${exec_prefix}/lib64
+  sysconfdir:             /etc
+  exec_prefix:            ${prefix}
+  bindir:                 ${exec_prefix}/bin
+  datarootdir:            ${prefix}/share
+  compiler:               gcc -std=gnu99
+  cflags:                 -g -O2
+  ldflags:                
+  wm:                     yes
+

@@ -1,0 +1,32 @@
+#.bashrc
+
+#Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+#Uncomment the following line if you don't like systemctl's auto-paging feature:
+#export SYSTEMD_PAGER=
+
+#User specific aliases and functions
+
+# main pahts
+export PATH=$PATH:/opt/android-sdk-linux/tools
+export PATH=$PATH:/opt/android-sdk-linux/platform-tools
+#export PATH=$PATH:/opt/arduino-ide/build/linux/dist
+export PATH=$PATH:/opt/texlive/2014/bin/x86_64-linux 
+
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# nvm activation
+source ~/.nvm/nvm.sh
+
+# To have sudo for other commands
+alias sudo='sudo env PATH=$PATH'
+
+# My documents for Fedora
+alias doc='cd $HOME/Development/github/fedora-docs'
+
+# Change terminal title to current directory name
+PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}-Terminal\007"'

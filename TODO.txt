@@ -1,0 +1,64 @@
+Todo Fedora 20
+--------------
+Install Chrome
+Install dropbox
+Install Deja-Dup - A gnome backup tool
+Install Gnome-tweak-tool (Install gnome-extension)
+Install Vim & reconfig /etc/vimrc (comment autobuffer)
+Install git
+Install package manager (rvm, npm, pip & ...)
+
+Install gnome-extensions
+------------------------
+# Download the following extensions
+  disable-workspace-switcher-popup
+  gnome-shell-extension-caffeine
+  insensitive-message-tray
+  nohotcorner
+
+Install Android SDK
+-------------------
+# Install require packages:
+	sudo yum install libstdc++.i686
+
+Fix fonts: (ruturahj.net)
+-------------------------
+# Add RPM Fusion Repo
+# Install freetype-freeworld
+  yum install freetype-freeworld
+# Tweak font rendering fron gnome-tweak-tool
+    Hinting = None
+    Antialiasing = Rgba
+# Add .fonts.conf to home folder:
+  ~/.fonts.conf
+
+Fix thinkpad trackpad (Use wheel emulator)
+---------------------------------
+copy the config file to /etc/X11/xorg.conf.d
+# For other version check the following website
+  www.thinkwiki.org/wiki/How_to_configure_the_TrackPoint
+  (Configuration using udev and HAL)
+
+Install Oracle Java - Only if you need it
+------------
+# The rpm file from java website will install it in:
+  /usr/java/latest/bin
+
+# Update java paths with alternative commands
+	alternative --install java/javac/jdb/javaws/...
+  # Example: sudo alternatives --install /usr/bin/java java /usr/java/latest/bin/java 1
+  update-alternatives --config java/javac/jdb/javaws/...
+	# Example: sudo update-alternatives --config java
+ 
+Install Eclipse
+---------------
+tar -xvf eclipse.tar
+sudo mv eclipse /opt
+# Add the desktop entry (eclipse.desktop) to
+  /usr/share/applications
+# Resolve GTalk-Plugin by adding the following line to eclipse.ini
+	-Dorg.eclipse.swt.browser.DefaultType=mozilla
+
+
+    
+	

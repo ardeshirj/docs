@@ -1,0 +1,46 @@
+Backup & Restore
+----------------
+# Check first
+  adb devices
+  # Should be an output like:
+  xxxxx   device
+  # If not output like that then
+    adb kill-server
+    adb start-server
+
+# Backup
+  adb backup -all -apk
+
+# Restore
+  adb restore [backup file]
+  
+Flashing
+--------
+# Start the device in fastboot mode (This will restart your device)
+  adb reboot bootloader
+
+# If necessary, unlock the device's bootloader by running:
+  sudo fastboot oem unlock # Confirming will erases all data on the target device
+
+# Flash and install
+  cd [the untar directory]
+  sudo ./flash-all
+
+# Lock the bootloader after install
+  adb reboot bootloader
+  sudo fastboot oem lock
+  
+Sideloading
+--------
+# Start the device in fastboot mode (This will restart your device)
+  adb reboot bootloader
+
+# Select option:
+  apply update from adb
+
+# Send file for sideloading
+  adb sideload [filename].zip
+
+# Reboot after installing
+  reboot system now
+
