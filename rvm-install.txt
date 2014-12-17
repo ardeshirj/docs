@@ -45,9 +45,10 @@ RVM Fedora 20
   bundle init or install # Generate or install Gemfile by using gem called bundle
   vim Gemfile # Add any gem files that needed for your project
   bundle install # Download and install gems and create Gemfile.lock
-  # In order to clean up the installed gems:
-    vim Gemfile  # Delete all gems you want to delete
-    bundle clean --force # Will delete previously installed by bundle
+  
+# To rest the gemset to default
+  rvm gemset [gemset-you-want-to-delete]
+  rvm gemset empty
 
 # To set ruby and gemset for the project 
   rvm --create --versions-conf use [ruby-version]@[the-gemset] # Create .versions.conf ofr
