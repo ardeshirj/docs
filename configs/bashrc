@@ -22,8 +22,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # nvm activation
 source ~/.nvm/nvm.sh
 
-# To have sudo for other commands
-alias sudo='sudo env PATH=$PATH'
+# To preserve user environment like .vimrc
+alias sudo='sudo -E PATH=$PATH'
 
 # My documents for Fedora
 alias doc='cd $HOME/Development/github/fedora-docs'
