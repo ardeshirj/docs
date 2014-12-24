@@ -9,7 +9,9 @@
 
   docker ps -a                              # Show all containers
   docker images                             # Show all images
-  
+
+  docker build -t [name]/[tag] .            # Build image from Dockerfile
+
   docker run -i -t [image-name] /bin/bash   # Run image in bash
   docker start -i container_name            # Start container back in bash
   docker rm container_name                  # Remove container
