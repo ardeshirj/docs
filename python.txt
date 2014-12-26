@@ -8,11 +8,31 @@ Pip
 
 # Install and upgrade(-U) pip-python
   pip-python install -U pip
- 
+
 Virtualevn
 ----------
 # Install python virtual environment globally
   sudo pip install virtualenv
+
+# Create a virtualenv for your python project
+  cd to-your-project
+  virtualenv env
+
+# Activate your virtualenv
+  source env/bin/activate # Should see you-name-it in your bash
+
+# Start install the packages you need for the first time
+  pip install flask
+  pip install ...
+
+# Save your packages to requirements.txt
+  pip freeze > requirments.txt
+
+# Anytime you clone the project you can easily install require packages
+  pip install -r requiriements.txt
+
+# To exit (or deactivate the virtualenv)
+  deactivate
 
 pep8
 ----
