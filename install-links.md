@@ -3,7 +3,9 @@
 List of script links to let you install programming tools.
 
 You may find documentation about how to install it in Fedora
-or you can run these scripts in bash via `curl -sL [the-link] | bash`
+or you can run these scripts in bash via
+
+`curl -sL [the-link] | bash`
 
 Tool   | Description            | Link
 ------ | ---------------------- | ----
