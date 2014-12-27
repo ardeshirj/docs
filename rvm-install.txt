@@ -1,26 +1,28 @@
-RVM Fedora 20
--------------
-
 # To install
-  curl -L https://get.rvm.io | bash -s stable
+  # Install mpapis public key
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
+  # This will download and install it at ~/.rvm/
+    curl -L https://get.rvm.io | bash -s stable
+
+# To uninstall
+  rvm implode
+
+# To Update
+  rvm get stable
 
 # Common issues
-  Adding gpg key for installing rvm
-  libsqlite3x-devel for rails sqlite3 gem
+  # Install libsqlite3x-devel for rails sqlite3 gem
 
-# Installing RVM to 
-  /home/warshall/.rvm/
+# Adding rvm PATH line to
+  $HOME/.profile
+  $HOME/.bashrc
+  $HOME/.zshrc
 
-# Adding rvm PATH line to 
-  /home/warshall/.profile 
-  /home/warshall/.bashrc
-  /home/warshall/.zshrc.
-  
-# Adding rvm loading line to 
-  /home/warshall/.bash_profile 
-  /home/warshall/.zlogin
-  
-# Enable login-shell in gnome-termial:
+# Adding rvm loading line to
+  $HOME/.bash_profile
+  $HOME/.zlogin
+
+# Need to enable login-shell in gnome-termial:
   Edit - Profile Preferences
   Title and Command tab
   checkbox - Run command as login shell
@@ -29,35 +31,33 @@ RVM Fedora 20
   rvm list known # Show most recent ruby versions to install
   rvm install 2.1.2 # Install ruby verison 2.1.2
   rvm list # List all installed ruby versions
+
   rvm docs generate # Generate ri docs for current ruby version
-    # Generate docs for other ruby versions that are installed:
+  # Generate docs for other rubyO versions that are installed:
     rvm cleanup all
     rvm all do rvm docs generate
+
+# Gemset
   rvm gemset create [you-name-it] # Create new gemset to use for a project
   rvm gemset list # List all the existing gemset for the current rubverison
   rvm use gemset [you-name-it] # Use the new gemset
 
-# Rails setup
-  gem install rails # Using rvm gem to install gems in gemset
-  rails new [you-app-name] # Create rails structure. Also run bundle install
+  # Reset the gemset to default (SKIP this if you install gem via bundle)
+    rvm gemset use [gemset-you-want-to-delete]
+    rvm gemset empty
 
-# Non-rails setup 
-  bundle init or install # Generate or install Gemfile by using gem called bundle
-  vim Gemfile # Add any gem files that needed for your project
+# Bundle-Gemfile setup
+  bundle init # Generate Gemfile by using gem called bundle
+  vim Gemfile # Add any gem files that needed for your project for example:
+    gem 'rails', '~> 4.2.0'
+    gem 'travis', '~> 1.7.4'
   bundle install # Download and install gems and create Gemfile.lock
-  
-# To rest the gemset to default
-  rvm gemset [gemset-you-want-to-delete]
-  rvm gemset empty
+  bundle show OR gem list # To list installed gem in the gemset
+  bundle clean --force # Will remove gems that is not in Gemfile anymore
 
-# To set ruby and gemset for the project 
-  rvm --create --versions-conf use [ruby-version]@[the-gemset] # Create .versions.conf ofr
+# To set ruby and gemset for the project (this will create .versions.conf)
+  rvm --create --versions-conf use [ruby-version]@[the-gemset]
 
-# rvm download folder
-  ~/.rvm/archives/
- 
-# Update rvm
-  rvm get stable
-
-# To remove
-  rvm implode
+# Remove ruby or gemset
+  rvm gemset remove [gemset-name] # Remove gemset
+  rvm remove [ruby-version] # Remove specefic ruby version
