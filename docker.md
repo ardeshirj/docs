@@ -1,7 +1,9 @@
-# Docking via Docker - Fedora 21
+# Docking via Docker
 
-  Set of useful Docker command via fedora image
+## Setup
+  [Docker documentation](https://docs.docker.com/installation/fedora/) covers how to install docker in Fedora
 
+## Usage
   **All the examples below should be done in root level**
   ```shell
   docker search [image-name]                # Search for images from Docker Hub
