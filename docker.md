@@ -16,6 +16,9 @@
 
   docker run -i -t [image-name] /bin/bash   # Run image in bash
   docker start -i container_name            # Start container back in bash
+
+  docker cp [image-name]:/home/test.txt ./  # Copy file from container to host
+
   docker rm container_name                  # Remove container
   docker rmi image:tag                      # Remove image with specefic tag
   ```
