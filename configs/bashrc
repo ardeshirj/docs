@@ -24,7 +24,7 @@ source ~/.nvm/nvm.sh
 alias sudo='sudo -E PATH=$PATH'
 
 # My documents for Fedora
-alias doc='cd $HOME/Development/github/fedora-doc'
+alias doc='cd $HOME/Development/github/fedora-docs'
 
 # Change terminal title to current directory name
 PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}-Terminal\007"'
