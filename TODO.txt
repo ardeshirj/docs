@@ -32,6 +32,11 @@ Fix fonts: (ruturahj.net)
 # Add .fonts.conf to home folder:
   ~/.fonts.conf
 
+Fix missing folder icons in home directory
+------------------------------------------
+# The path for those icons is :
+/usr/share/icons/Adwaita/32x32/places
+
 Fix thinkpad trackpad (Use wheel emulator)
 ---------------------------------
 copy the config file to /etc/X11/xorg.conf.d
@@ -49,7 +54,7 @@ Install Oracle Java - Only if you need it
   # Example: sudo alternatives --install /usr/bin/java java /usr/java/latest/bin/java 1
   update-alternatives --config java/javac/jdb/javaws/...
 	# Example: sudo update-alternatives --config java
- 
+
 Install Eclipse
 ---------------
 tar -xvf eclipse.tar
@@ -58,7 +63,3 @@ sudo mv eclipse /opt
   /usr/share/applications
 # Resolve GTalk-Plugin by adding the following line to eclipse.ini
 	-Dorg.eclipse.swt.browser.DefaultType=mozilla
-
-
-    
-	
