@@ -1,0 +1,35 @@
+# Install postgres packages
+sudo yum install
+  postgresql 
+  postgresql-contrib 
+  postgresql-devel 
+  postgresql-libs 
+  postgresql-server
+
+# Get status of postgresql database
+sudo systemctl status postgresql
+
+# Creates  postgresql.conf & pg_hba.conf in /var/lib/pgsql
+# also create postgres user as well
+sudo postgresql-setup initdb
+
+# Restart the service after creating the cluster database 
+sudo systemctl restart postgresql
+
+# Get to postgres user bash
+sudo su - postgres
+
+  # Create new db
+  createdb [name]
+
+  # drop a db
+  dropdb [name]
+
+  # Get to postgres shell
+  psql
+  
+    # Get list of existing database
+    # postgres, template-0 & template-1 are the default ones
+    \list
+  
+
