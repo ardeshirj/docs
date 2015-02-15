@@ -40,3 +40,6 @@ sudo su - postgres
     # Get list of existing database
     # postgres, template-0 & template-1 are the default ones
     \list
+
+    # Create new user with roles
+    CREATE USER the_user_name WITH CREATEDB LOGIN PASSWORD 'the-password';
