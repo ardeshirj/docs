@@ -1,10 +1,13 @@
-Backup & Restore
-----------------
+# Nexus-Doc
+android-sdk commands.
+
+## Backup & Restore
+```shell
 # Check first
   adb devices
   # Should be an output like:
   xxxxx   device
-  # If not output like that then
+  # If no output like that then
     adb kill-server
     adb start-server
 
@@ -13,9 +16,10 @@ Backup & Restore
 
 # Restore
   adb restore [backup file]
-  
-Flashing
---------
+```
+
+## Flashing
+```shell
 # Start the device in fastboot mode (This will restart your device)
   adb reboot bootloader
 
@@ -29,9 +33,10 @@ Flashing
 # Lock the bootloader after install
   adb reboot bootloader
   sudo fastboot oem lock
-  
-Sideloading
---------
+```
+
+## Sideloading
+```shell
 # Start the device in fastboot mode (This will restart your device)
   adb reboot bootloader
 
@@ -48,4 +53,4 @@ Sideloading
     adb silde load filename.zip
 
 # Reboot after installing select reboot system now
-
+```
