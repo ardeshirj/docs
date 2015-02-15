@@ -17,6 +17,11 @@ sudo postgresql-setup initdb
 /var/lib/pgsql/data/postgresql.conf
 /var/lib/pgsql/data/pg_hba.confs
 
+# Update config file to use password method
+vim /var/lib/pgsql/data/pg_hba.conf
+# Example: local all all ident
+# Change ident method to md5 for specific connection like IPv6
+
 # Restart the service after creating the cluster database
 sudo systemctl restart postgresql
 
