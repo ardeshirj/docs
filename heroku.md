@@ -20,6 +20,9 @@ wget -qO- https://toolbelt.heroku.com/install.sh | sh
   # Push to heroku - Done!
   git push heroku master
 
+  # Push to heroku from different branch
+  git push heroku yourbranch:master
+
   # Check running process
   heroku ps
 
