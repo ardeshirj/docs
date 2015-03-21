@@ -21,8 +21,8 @@ Install Android SDK
 # Install require packages:
 	sudo yum install libstdc++.i686
 
-Fix fonts: (ruturahj.net)
--------------------------
+Fix fonts (ruturahj.net)
+------------------------
 # Add RPM Fusion Repo
 # Install freetype-freeworld
   yum install freetype-freeworld
@@ -31,6 +31,14 @@ Fix fonts: (ruturahj.net)
     Antialiasing = Rgba
 # Add .fonts.conf to home folder:
   ~/.fonts.conf
+
+Set fonts
+---------
+# Set gnome-terminal font to courier code roman
+  # Download the font from open font library website
+
+# Set atom font to inconsolata
+  sudo yum install levien-inconsolata-fonts
 
 Fix missing folder icons in home directory
 ------------------------------------------
