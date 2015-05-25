@@ -34,11 +34,10 @@ Fix fonts (ruturahj.net)
 
 Set fonts
 ---------
-# Set gnome-terminal font to courier code roman
-  # Download the font from open font library website
-
-# Set atom font to inconsolata
-  sudo yum install levien-inconsolata-fonts
+# Download courier prime from - http://quoteunquoteapps.com/courierprime/
+# Copy the .ttf files to ~/.local/share/fonts for current user
+# Set gnome-terminal font to Courier Prime Sans Regular
+# Set atom font to Courier Prime Source
 
 Fix missing folder icons in home directory
 ------------------------------------------
