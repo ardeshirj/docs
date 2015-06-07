@@ -11,10 +11,9 @@ Install package manager (rvm, npm, pip & ...)
 Install gnome-extensions
 ------------------------
 # Download the following extensions
-  disable-workspace-switcher-popup
   gnome-shell-extension-caffeine
-  insensitive-message-tray
   nohotcorner
+  topicons
 
 Install Android SDK
 -------------------
@@ -27,8 +26,8 @@ Fix fonts (ruturahj.net)
 # Install freetype-freeworld
   yum install freetype-freeworld
 # Tweak font rendering fron gnome-tweak-tool
-    Hinting = None
-    Antialiasing = Rgba
+  Hinting = None
+  Antialiasing = Rgba
 # Add .fonts.conf to home folder:
   ~/.fonts.conf
 
