@@ -11,9 +11,9 @@ install package managers:
 - npm
 - pip
 
-## Fonts
-install source code pro
-sudo dnf install adobe-source-code-pro-fonts
+## fonts
+install source code pro:
+- sudo dnf install adobe-source-code-pro-fonts
 
 ## i3wm
 - sudo dnf install i3
@@ -40,6 +40,6 @@ sudo dnf install adobe-source-code-pro-fonts
   - /usr/share/icons/Adwaita/32x32/places
 
 
-## Android SDK
-- install require package:
+## android SDK
+install require package:
   - sudo dnf install libstdc++.i686
