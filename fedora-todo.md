@@ -16,7 +16,12 @@ install source code pro:
 - sudo dnf install adobe-source-code-pro-fonts
 
 ## i3wm
-- sudo dnf install i3
+- sudo dnf install
+  - i3
+  - i3lock
+  - i3status
+  - ranger
+  - xbacklight
 - mv configs/i3/config ~/
 - mv configs/.Xresources ~/
 
