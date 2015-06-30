@@ -10,7 +10,7 @@ fi
 
 #User specific aliases and functions
 
-# main pahts
+# main paths
 export PATH=$PATH:/opt/android-sdk-linux/
 export PATH=$PATH:/opt/texlive/2014/bin/x86_64-linux
 export PATH=$PATH:/usr/local/heroku/bin

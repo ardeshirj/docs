@@ -22,6 +22,8 @@ install source code pro:
   - i3status
   - ranger
   - xbacklight
+- sudo pip install
+  - py3stats
 - mv configs/i3/config ~/
 - mv configs/.Xresources ~/
 
