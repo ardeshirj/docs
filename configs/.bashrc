@@ -11,8 +11,9 @@ fi
 #User specific aliases and functions
 
 # main paths
-export PATH=$PATH:/opt/android-sdk-linux/
-export PATH=$PATH:/opt/texlive/2014/bin/x86_64-linux
+export PATH=$PATH:/opt/android-sdk-linux/tools
+export PATH=$PATH:/opt/android-sdk-linux/platform-tools
+export PATH=$PATH:/opt/texlive/2015/bin/x86_64-linux
 export PATH=$PATH:/usr/local/heroku/bin
 export PATH=$PATH:$HOME/.rvm/bin
 
@@ -20,7 +21,7 @@ export PATH=$PATH:$HOME/.rvm/bin
 source ~/.nvm/nvm.sh
 
 # To preserve user environment like .vimrc
-alias sudo='sudo -E PATH=$PATH'
+alias sudo='sudo -E env PATH=$PATH'
 
 # My documents for Fedora
 alias doc='cd $HOME/Development/github/fedora-docs'
