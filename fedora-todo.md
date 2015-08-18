@@ -50,3 +50,4 @@ install source code pro:
 ## android SDK
 install require package:
   - sudo dnf install libstdc++.i686
+  - sudo dnf install java-devel
