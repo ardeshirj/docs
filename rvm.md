@@ -44,7 +44,7 @@ Need to enable login-shell in gnome-termial:
 
 # Generate ri docs for current ruby version
   rvm docs generate
-# Generate docs for other rubyO versions that are installed:
+# Generate docs for other ruby versions that are installed:
   rvm cleanup all
   rvm all do rvm docs generate
 ```
