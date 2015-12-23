@@ -12,6 +12,7 @@ Lets document what we usually use in rvm
   $HOME/.profile
   $HOME/.bashrc
   $HOME/.zshrc
+  $HOME/.mkshrc
 
 # Will add rvm loading to
   $HOME/.bash_profile
