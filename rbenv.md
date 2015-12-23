@@ -39,9 +39,9 @@ rbenv local 2.2.3   # Will create .ruby-version file
 rbenv-gemset init   # Will create .rbenv-gemsets file
 
 rbenv-gemset list   # List all existing gemsets
-rbenv-gemset active # You gemset should be activated!
+rbenv-gemset active # Your gemset should be activated!
 
-# Install bundler to manager gems from Gemfile
+# Install bundler to manage gems from Gemfile
 gem install bundler
 vim Gemfile
   source 'https://rubygems.org'
