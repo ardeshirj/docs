@@ -1,4 +1,6 @@
 # RVM - Ruby Version Manager
+NOTE: You may wanna use rbenv instead!
+
 Lets document what we usually use in rvm
 
 ## General
