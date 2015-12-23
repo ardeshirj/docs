@@ -47,8 +47,10 @@ vim Gemfile
   source 'https://rubygems.org'
   gem 'bundler'
 
+# Install gems from Gemfile
 bundle install
 
+# Make sure to commit the files
 git add Gemfile Gemfile.lock .rbenv-gemsets .ruby-version
 ```
 
