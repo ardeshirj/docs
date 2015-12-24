@@ -39,14 +39,11 @@ Need to enable login-shell in gnome-termial:
 # List all installed ruby versions
   rvm list
 
-# Setup default alis
+# Setup default alias
   rvm alias create default [ruby-version]
 
 # Generate ri docs for current ruby version
   rvm docs generate
-# Generate docs for other ruby versions that are installed:
-  rvm cleanup all
-  rvm all do rvm docs generate
 ```
 
 ## Gemset
