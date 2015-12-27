@@ -48,9 +48,9 @@ Need to enable login-shell in gnome-termial:
 
 ## Gemset
 ```shell
-# Install gems in global so we can use it in all projects
+# Install gems in global gemset so we can use it in all projects
   rvm gemset use global
-  gem install rubocop byebug
+  gem install rubocop byebug bundler
 # Create new gemset to use for a project
   rvm gemset create [you-name-it]
 # List all the existing gemset for the current ruby verison
