@@ -1,4 +1,0 @@
-Adjust SE for CSGO
-------------------
-
-sudo setsebool -P selinuxuser_execheap 1
