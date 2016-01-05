@@ -3,9 +3,10 @@ Lets document what we usually use in rvm
 
 ## General
 ```shell
-# Install mpapis public key
+# In linux, install mpapis public key
   gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3
-# This will download and install it at ~/.rvm/
+
+# This will download and install rvm at ~/.rvm/
   curl -L https://get.rvm.io | bash -s stable
 
 # Will add rvm PATH to
