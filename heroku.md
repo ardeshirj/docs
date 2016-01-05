@@ -1,9 +1,5 @@
 # Heroku
-
-## Toolbelt
-```shell
-wget -qO- https://toolbelt.heroku.com/install.sh | sh
-```
+To install use the [Heroku toolbelt website](https://toolbelt.heroku.com/osx)
 
 ## Commands
 ```shell
