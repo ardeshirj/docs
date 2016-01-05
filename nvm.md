@@ -3,7 +3,7 @@
 ## General:
 To install or update run following command
 ```shell
-  # Replace the version below with most recent version
+# Replace the version below with most recent version
   curl https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash
 ```
 
@@ -46,6 +46,6 @@ to one of these files:
 
 ## To remove
 ```shell
+# Remove the config values from dot files
 rm -rf ~/.nvm
-# Also make sure to remove the config values from dot files
 ```
