@@ -23,10 +23,14 @@ to one of these files:
   nvm ls-remote
 # Install stable nodejs stable version
   nvm install node
-# This will set the node and stable aliases - Example:
-  ->       v5.3.0
+# To set a default Node version to be used in any new shell
+  nvm alias default node
+# List existing aliases
+  nvm alias list
+  default -> node (-> v5.3.0)
   node -> stable (-> v5.3.0) (default)
   stable -> 5.3 (-> v5.3.0) (default)
+  iojs -> N/A (default)
 # You can confirm installation:
   node -v
   npm -v
