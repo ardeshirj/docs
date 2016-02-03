@@ -71,14 +71,6 @@ Need to enable login-shell in gnome-termial:
   rvm remove [ruby-version]
 ```
 
-## Rubocop setup
-```shell
-# Switch to global gemset
-  rvm use gemset global
-# Install the gem
-  gem install rubocop
-```
-
 ## Bundle-Gemfile setup
 ```shell
 # Install bundler in your current gemset
