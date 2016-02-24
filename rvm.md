@@ -73,8 +73,6 @@ Need to enable login-shell in gnome-termial:
 
 ## Bundle-Gemfile setup
 ```shell
-# Install bundler in your current gemset
-  gem install bundler
 # Generate Gemfile by using gem called bundle
   bundle init
 # Add any gem files that needed for your project for example:
