@@ -48,7 +48,8 @@ brew status postgres
 ## Get Into psql Shell
 ```shell
 # OSX
-No need change the user for osx
+# No need change the user for osx
+
 # Fedora
 sudo su - postgres
 
