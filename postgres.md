@@ -3,6 +3,21 @@ Setting up Postgres database in Fedora
 
 ## Setup
 ```shell
+# OSX
+brew install postgresql
+
+# For Launchctrl to start postgresql at login:
+ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents
+
+# To load postgresql now:
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+
+# or use brew services wrapper for Launchctrl
+brew services
+# Check postgres status
+brew status postgres
+
+# Fedora
 # Install the following packages
   sudo dnf install
     postgresql
@@ -30,6 +45,11 @@ Setting up Postgres database in Fedora
 
 # Get to postgres user bash
 ```shell
+# OSX
+# By default the postgresql user is current OSX username with no password
+# No need to change user
+
+# Fedora
 sudo su - postgres
 
   # Create new db
