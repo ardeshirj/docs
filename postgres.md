@@ -46,8 +46,12 @@ brew status postgres
 ```
 
 ## Get Into psql Shell
-### OSX
 ```shell
+# OSX
+No need change the user for osx
+# Fedora
+sudo su - postgres
+
 # Create new db
 createdb [name]
 
@@ -55,31 +59,14 @@ createdb [name]
 dropdb [name]
 
 # Get to postgres shell
-psql [dbName]
+psql
 
-  # Get list of existing dbs
+  # Get list of existing database
+  # postgres, template-0 & template-1 are the default ones
   \list
-```
 
-### Fedora
-```shell
-sudo su - postgres
-
-  # Create new db
-  createdb [name]
-
-  # drop a db
-  dropdb [name]
-
-  # Get to postgres shell
-  psql
-
-    # Get list of existing database
-    # postgres, template-0 & template-1 are the default ones
-    \list
-
-    # Create new user with roles
-    CREATE USER the_user_name WITH CREATEDB LOGIN PASSWORD 'the-password';
+  # Create new user with roles
+  CREATE USER the_user_name WITH CREATEDB LOGIN PASSWORD 'the-password';
 ```
 
 ## Configuration files
