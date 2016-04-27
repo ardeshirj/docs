@@ -58,12 +58,25 @@ brew status postgres
 createdb [name]
 dropdb [name]
 
+# Create new user with role & password
+CREATE USER the_user_name WITH CREATEDB LOGIN PASSWORD 'the-password';
+
 # Create/Drop a db roles
 createuser [name]
 dropuser [name]
 
 # List dbs
 psql --list
+
+
+# To get into psql shell
+psql db-name
+
+  # List tables
+  \dt
+
+  # List current user & roles
+  \du
 ```
 
 ## Configuration files
