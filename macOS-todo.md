@@ -1,8 +1,9 @@
-# OSX
+# macOS
 
 ## Genreal
 - Google chrome
 - Atom
+- Source code pro font
 
 ## Homebrew
 ```shell
@@ -13,11 +14,10 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 - bash-completion
 - git
 - python
-- android-sdk
 - pandoc
 ```
 
-## Install package managers
+## Install package/version managers
 - rvm
-- npm
-- pip
+- nvm
+- yarn (ATM: npm install -g yarn)
