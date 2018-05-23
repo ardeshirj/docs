@@ -10,14 +10,8 @@
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Brew the following packages
-- bash-completion
-- git
-- python
-- pandoc
+brew install bash-completion yarn nvm python python3
 ```
 
 ## Install package/version managers
 - rvm
-- nvm
-- yarn (ATM: npm install -g yarn)
