@@ -2,16 +2,13 @@
 
 ## Genreal
 - Google chrome
-- Atom
-- Source code pro font
+- VS Code
+- Source code Variable Font
 
 ## Homebrew
 ```shell
 # Install homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install bash-completion yarn nvm python python3
+brew install git bash-completion yarn nvm python3
 ```
-
-## Install package/version managers
-- rvm
